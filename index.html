@@ -13,9 +13,26 @@
       <div class="jumbotron">
         <h1>Regal Cinima 2000!</h1>
       </div>
-      <form class="" action="index.html" method="post">
-
-      </form>
+      <div class="row">
+        <div class="col-md-3">
+          <form id="movie-form">
+              <h2>Movies showing:</h2>
+              <select id="movie-selection" class="form-control">
+                <option value="new1">Terminator</option>
+                <option value="new2">Avatar</option>
+                <option value="old1">Transformers</option>
+                <option value="old2">Preditor</option>
+              </select>
+              <br>
+              <h2>Age:</h2>
+            <div class="radio">
+              <label>
+                <input type="radio" name="adult" value="type" checked>Adult ticket: 16-45
+              </label>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
   </body>
 </html>
