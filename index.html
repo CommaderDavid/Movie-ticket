@@ -19,28 +19,35 @@
             <div class="form-group">
               <h2>Movies showing:</h2>
               <select id="movie-selection" class="form-control">
-                <option value="1">Terminator: Rise of robo chimps</option>
-                <option value="1">Avatar XV I guess...</option>
-                <option value="2">Transformers</option>
-                <option value="2">Preditor</option>
+                <option value="new">Terminator: Rise of robo chimps</option>
+                <option value="new">Avatar XV I guess...</option>
+                <option value="old">Transformers</option>
+                <option value="old">Preditor</option>
               </select>
             </div>
             <div class="form-group">
               <h2>Time of showing:</h2>
               <select id="time-selection" class="form-control">
-                <option value="1">Normal times: 3-Midnight</option>
-                <option value="2">Matinee viewings: 10am-2pm</option>
+                <option value="normal">Normal times: 3-Midnight</option>
+                <option value="matinee">Matinee viewings: 10am-2pm</option>
               </select>
             </div>
             <div class="form-group">
               <h2>Tickets:</h2>
               <select id="ticket-selection" class="form-control">
-                <option value="1">Normal ticket (age 12-45)</option>
-                <option value="2">Senior ticket: (age 45-90)</option>
+                <option value="normal">Normal ticket (age 12-45)</option>
+                <option value="senior">Senior ticket: (age 45-90)</option>
               </select>
             </div>
             <button type="submit" class="btn btn-danger">Buy Ticket</button>
           </form>
+        </div>
+        <div class="col-md-4">
+          <!-- empty space -->
+        </div>
+        <div class="col-md-4" id="final-ticket-price">
+          <h2>Your ticket is:</h2>
+          <p><span id="final-price"></span> Dollars.</p>
         </div>
       </div>
     </div>
