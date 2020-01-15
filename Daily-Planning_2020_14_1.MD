@@ -30,8 +30,8 @@
 
 #### Please list the names of the projects you worked on today:
 
-*
+* Movie ticket
 
 #### Please add a link to GitHub repository to all projects you worked on today:
 
-*
+* https://github.com/CommaderDavid/Movie-ticket
