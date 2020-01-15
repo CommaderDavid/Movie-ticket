@@ -5,7 +5,7 @@ function Ticket(movieSelection, timeSelection, ticketSelection) {
   this.ticketSelection = ticketSelection;
 }
 
-Ticket.prototype.addPrice = function price() {
+Ticket.prototype.addPrice = function() {
   price = 0;
   if (this.movieSelection === "new") {
     price += 10;
@@ -22,18 +22,19 @@ Ticket.prototype.addPrice = function price() {
   } else {
     price += 1;
   }
+  return price;
 }
 
 // user logic
 $(document).ready(function() {
   $("form#movie-form").submit(function(e) {
     e.preventDefault();
-    var movieSelect = $("input#movie-selection").val();
-    var timeSelect = $("input#time-selection").val();
-    var ticketSelect = $("input#ticket-selection").val();
+    var movieSelect = $("select#movie-selection").val();
+    var timeSelect = $("select#time-selection").val();
+    var ticketSelect = $("select#ticket-selection").val();
 
     var personalTicket = new Ticket(movieSelect, timeSelect, ticketSelect);
+    $("#final-price").append(personalTicket.addPrice());
     $("#final-ticket-price").show();
-    $("#final-price").append(personalTicket);
   })
 })
