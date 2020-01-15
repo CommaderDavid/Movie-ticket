@@ -28,6 +28,12 @@ Ticket.prototype.addPrice = function price() {
 $(document).ready(function() {
   $("form#movie-form").submit(function(e) {
     e.preventDefault();
-    var movieSelect = $("input#") 
+    var movieSelect = $("input#movie-selection").val();
+    var timeSelect = $("input#time-selection").val();
+    var ticketSelect = $("input#ticket-selection").val();
+
+    var personalTicket = new Ticket(movieSelect, timeSelect, ticketSelect);
+    $("#final-ticket-price").show();
+    $("#final-price").append(personalTicket);
   })
 })
